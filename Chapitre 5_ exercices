@@ -1,0 +1,15 @@
+# anagramme
+def anagrammes(v, w):
+    " Ce programme permet de savoir si v et w sont des annagramme"
+    if len(v) != len(w):
+        return 'False'
+    else:
+        for i in v:
+            if i not in w:
+                return 'False'
+                break
+            else:
+                continue
+            return 'True'
+
+print(anagrammes('marion', 'romina'))
